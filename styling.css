@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap");
+:root {
+  /* background-colors */
+  --darkgrayblue: #4682b4;
+  --verydarkgray: #333333;
+  --lightgray: #cccccc;
+  --green: #00ed82;
+
+  /* text-colors */
+  --hoverstate: #ebedf2;
+  --font: Rubik, sans-serif;
+  /* need to fix the font still */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+
+/*start page*/
+.startpage,
+.main-container,
+.sign-but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.startpage {
+  height: 95vh;
+  background: url(images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 100px 150px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.main-container {
+  /* border: 2px solid white; */
+  height: 75%;
+  margin: 10px 0 50px 0;
+  justify-content: center;
+  transform: translateY(-20px);
+}
+
+.start-initial-text {
+  color: var(--green);
+  font-size: 13px;
+  margin: 15px;
+  font-weight: 500;
+}
+
+.brand {
+  background-image: url(images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 250px;
+  margin: 10px 0 0 0;
+  /* border: 2px solid white; */
+}
+
+.start-desc-text1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  font-size: 16pxpx;
+}
+
+.get-bundle {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 20%;
+  background-color: var(--darkgrayblue);
+}
+
+.sign-but {
+  background-color: white;
+  height: 50px;
+  width: 250px;
+  border: 2px solid black;
+  z-index: 2;
+  margin: 20px 0 15px 0;
+  border-radius: 5px;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sign-but:hover {
+  background-color: var(--hoverstate);
+}
+.sign-desc {
+  font-size: 10px;
+  color: var(--lightgray);
+}
+
+/* ---------start page done------------- */
+section {
+  height: 100vh;
+  background-color: black;
+}
