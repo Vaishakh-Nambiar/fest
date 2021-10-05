@@ -7,11 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hulu</title>
     <link rel="stylesheet" href="styling.css">
-
 </head>
 
 <body>
 
+    <div class="overlay hidden">
+
+        <div class="login-area">
+            <form class="login-page">
+                <div class="cross">
+                    <img src="images/close.svg">
+                </div>
+                <div class="l-content">
+                    <h2>Log In</h2>
+                    <div class="l-head">
+                        EMAIL
+                    </div>
+                    <input type="text" class="input">
+                    <div class="l-head">
+                        PASSWORD
+                    </div>
+                    <input type="password" class="input">
+                </div>
+                <div class="login-but">LOG IN</div>
+            </form>
+            <div class="free-trail">
+                Dont have an account?
+                <div id="blue">Start your free trial</div>
+            </div>
+        </div>
+    </div>
 
     <div class="startpage">
 
@@ -205,8 +230,9 @@
                 <img src="images/instagram.svg">
             </div>
         </div>
-
     </footer>
+
+    <script src="brain.js"></script>
 </body>
 
 </html>

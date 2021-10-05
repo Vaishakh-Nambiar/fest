@@ -12,7 +12,8 @@
   --offblack: #151516;
   --offwhite: #ebedf2;
   --lightoffwhite: #f7f7f9;
-  /* need to fix the font still */
+
+  --font: rubik, sans-serif;
 }
 
 * {
@@ -21,10 +22,111 @@
   font-family: var(--font);
   box-sizing: border-box;
 }
+
 section {
   height: 100vh;
   background-color: black;
 }
+/* LOGIN */
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+  transition: all 500ms;
+}
+
+.login-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.login-page {
+  z-index: 5;
+  height: 350px;
+  width: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 25px;
+  position: relative;
+}
+
+.cross {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 15px 10px;
+  cursor: pointer;
+}
+.cross img {
+  height: 20px;
+}
+
+.l-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  width: 230px;
+  /* border: 2px solid yellow; */
+  margin: 10px 0 10px 0;
+}
+
+.l-head {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 15px 0 5px 0px;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+}
+
+.login-but {
+  background-color: black;
+  width: 230px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 5px 0 20px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.free-trail {
+  width: 300px;
+  padding: 15px;
+  color: black;
+  background-color: #ebedf2;
+}
+
+#blue {
+  color: #4682b4;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* -------------------------- */
+
+/* -------------------------- */
+
 /*start page*/
 .startpage,
 .main-container,
@@ -53,6 +155,7 @@ section {
   padding: 10px;
   font-weight: 500;
   margin: 20px 30px;
+  cursor: pointer;
 }
 
 .main-container {
@@ -396,7 +499,6 @@ ul li {
   display: flex;
   width: 100%;
   margin: 5px;
-  font-weight: 500;
   color: var(--offblack);
 }
 .f-bold {
