@@ -19,8 +19,12 @@
   margin: 0;
   padding: 0;
   font-family: var(--font);
+  box-sizing: border-box;
 }
-
+section {
+  height: 100vh;
+  background-color: black;
+}
 /*start page*/
 .startpage,
 .main-container,
@@ -175,7 +179,238 @@ a {
 }
 /* ---------start page done------------- */
 
-section {
-  height: 100vh;
+/* second page */
+.p2,
+.p3 {
+  height: 120vh;
   background-color: black;
+  padding: 8px;
 }
+
+.p2,
+.page-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.page-2 .green {
+  font-size: 16px;
+}
+
+.page-2-head {
+  font-size: 4em;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+.page-2-text {
+  display: block;
+  width: 55%;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0 30px 0;
+}
+
+.cards {
+  height: 500px;
+  width: 1280px;
+  /* border: 2px solid white; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.tv,
+.movies,
+.premiums,
+.originals {
+  height: 85%;
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0 80px 100px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.tv {
+  background-image: url(images/cover1.jpg);
+}
+.movies {
+  background-image: url(images/cover2.jpg);
+}
+.originals {
+  background-image: url(images/cover3.jpg);
+}
+.premiums {
+  background-image: url(images/cover4.jpg);
+}
+.cards-text {
+  align-self: flex-end;
+  font-size: 13px;
+}
+.card-bold {
+  /* font-weight: 700; */
+  font-size: 24px;
+}
+/* ---------second page done------------- */
+
+/* third page */
+.p3 {
+  height: 85vh;
+  padding: 15px;
+}
+.p3,
+.page-3,
+.page-3-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page-3 {
+  border: 5px solid var(--green);
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  margin: 5px;
+  color: white;
+}
+.page-3 .green {
+  font-size: 16px;
+}
+.page-3-container {
+  /* border: 2px solid white; */
+  height: 100%;
+  width: 75%;
+  padding: 10px;
+}
+.page-3--head {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 20px;
+}
+.page-3--text-normal {
+  font-size: 24px;
+  margin: 10px;
+}
+.page-3--text-small {
+  font-size: 10px;
+  color: var(--lightgray);
+  margin: 30px;
+}
+/* ---------third page done------------- */
+
+/* fourth page */
+.p4,
+.page-4 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.p4 {
+  background-image: url(images/live-sports.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 40px 100px rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+
+.page-4 {
+  height: 100%;
+  width: 75%;
+  margin: 10px;
+  padding: 50px;
+}
+.page-4--head {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 15px;
+}
+.page-4--text {
+  width: 60%;
+  font-size: 26px;
+  margin: 15px;
+}
+.page-4-logos {
+  height: 60px;
+  width: 30%;
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: url(images/network-logo-bg.png);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  height: 20px;
+  width: 30px;
+}
+.page-4 .page-3--text-small {
+  margin: 5px 15px;
+}
+
+/* ---------fourth page done------------- */
+/* footer */
+footer {
+  height: 50vh;
+  background-color: var(--offwhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-content {
+  height: 50%;
+  width: 60%;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 2px solid var(--lightgray);
+}
+ul {
+  flex-direction: column;
+  height: 80%;
+  width: 30%;
+}
+ul li {
+  display: flex;
+  width: 100%;
+  margin: 5px;
+  font-weight: 500;
+  color: var(--offblack);
+}
+.f-bold {
+  font-weight: 700;
+}
+.handle-logos {
+  display: flex;
+  width: 230px;
+  padding: 5px 15px;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin: 10px 0 10px 300px;
+}
+.handle-logos img {
+  height: 25px;
+}
+/* --------footer done------------- */
