@@ -21,8 +21,8 @@
   padding: 0;
   font-family: var(--font);
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
-
 section {
   height: 100vh;
   background-color: black;
@@ -218,7 +218,6 @@ input {
   bottom: 0;
   height: 20%;
 
-  background: var(--offblack);
   background: linear-gradient(90deg, rgb(39, 49, 54) 35%, rgb(33, 63, 88) 85%);
   display: flex;
   justify-content: space-between;
