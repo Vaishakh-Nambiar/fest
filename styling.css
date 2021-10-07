@@ -27,6 +27,7 @@ section {
   height: 100vh;
   background-color: black;
 }
+
 /* LOGIN */
 
 .overlay {
@@ -193,17 +194,19 @@ input {
   background-color: white;
   height: 50px;
   width: 250px;
-  /* border: 2px solid black; */
-  color: var(--verydarkgray);
   z-index: 2;
   margin: 20px 0 15px 0;
   border-radius: 5px;
   color: black;
-  font-weight: 500;
   cursor: pointer;
   transition: all 200ms;
 }
-
+.sign-but a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+}
 .sign-but:hover {
   background-color: var(--hoverstate);
 }
@@ -221,7 +224,6 @@ input {
   background: linear-gradient(90deg, rgb(39, 49, 54) 35%, rgb(33, 63, 88) 85%);
   display: flex;
   justify-content: space-between;
-  /* justify-content: space-evenly; */
   align-items: center;
 }
 
@@ -273,12 +275,18 @@ a {
   margin: 10px 0;
   padding: 15px 25px;
   transition: all 200ms;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
 }
+
 .get-bundle--button:hover {
+  text-decoration: none;
   color: black;
   font-weight: 700;
   background-color: white;
 }
+
 /* ---------start page done------------- */
 
 /* second page */

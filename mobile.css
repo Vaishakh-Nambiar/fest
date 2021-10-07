@@ -446,9 +446,9 @@
   .p4 {
     height: 150vh;
     width: 100%;
-    /* background-image: url(images/live-sports.jpg); */
-    /* background-size: contain;
-    background-position: center; */
+    background-image: url(images/live-sports.jpg);
+    background-position-x: -150px;
+    background-position-y: center;
     box-shadow: inset 0 40px 100px rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
