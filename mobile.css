@@ -366,16 +366,16 @@
   }
 
   .tv {
-    /* background-image: url(images/cover1.jpg); */
+    background-image: url(images/cover1.jpg);
   }
   .movies {
-    /* background-image: url(images/cover2.jpg); */
+    background-image: url(images/cover2.jpg);
   }
   .originals {
-    /* background-image: url(images/cover3.jpg); */
+    background-image: url(images/cover3.jpg);
   }
   .premiums {
-    /* background-image: url(images/cover4.jpg); */
+    background-image: url(images/cover4.jpg);
   }
   .cards-text {
     align-self: flex-end;
